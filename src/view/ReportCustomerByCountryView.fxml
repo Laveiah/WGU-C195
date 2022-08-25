@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportCustomerByCountryController">
+   <children>
+      <Button fx:id="reportCustomerByCountryBackButton" layoutX="514.0" layoutY="331.0" mnemonicParsing="false" onAction="#onReportCustomerByCountryBackButton" text="Back" />
+      <TableView fx:id="customerByCountryTableView" layoutX="70.0" layoutY="100.0" prefHeight="216.0" prefWidth="460.0">
+        <columns>
+          <TableColumn fx:id="customerByCountryNameColumn" prefWidth="227.0" text="Country Name" />
+          <TableColumn fx:id="customerByCountryTotalColumn" prefWidth="232.0" text="Country Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="187.0" layoutY="43.0" text="Customer By Country">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

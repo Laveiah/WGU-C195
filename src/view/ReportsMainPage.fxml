@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportMainController">
+   <children>
+      <Label layoutX="216.0" layoutY="48.0" text="Reports Main Screen">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="reportContactScheduleButton" layoutX="246.0" layoutY="143.0" mnemonicParsing="false" onAction="#onReportContactScheduleButton" prefHeight="32.0" prefWidth="129.0" text="Contact Schedule" />
+      <Button fx:id="reportByAppointmentTotal" layoutX="246.0" layoutY="184.0" mnemonicParsing="false" onAction="#onReportByAppointmentTotalButton" prefHeight="32.0" prefWidth="129.0" text="Appointment Totals" />
+      <Button fx:id="reportCustomerByCountryButton" layoutX="246.0" layoutY="224.0" mnemonicParsing="false" onAction="#onReportCustomerByCountryButton" prefHeight="32.0" prefWidth="129.0" text="Customer By Country" />
+      <Button fx:id="reportMainScreenBackButton" layoutX="444.0" layoutY="335.0" mnemonicParsing="false" onAction="#OnReportMainScreenBackButton" prefHeight="32.0" prefWidth="129.0" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="281.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectController">
+   <children>
+      <Button fx:id="selectCustomerButton" layoutX="219.0" layoutY="112.0" mnemonicParsing="false" onAction="#onSelectCustomerButton" prefHeight="26.0" prefWidth="162.0" text="Customers" />
+      <Button fx:id="selectAppointmentsButton" layoutX="219.0" layoutY="150.0" mnemonicParsing="false" onAction="#onSelectAppointmentsButton" prefHeight="25.0" prefWidth="162.0" text="Appointments" />
+      <Button fx:id="selectReportsButton" layoutX="219.0" layoutY="187.0" mnemonicParsing="false" onAction="#onSelectReportsButton" prefHeight="26.0" prefWidth="162.0" text="Reports" />
+      <Button fx:id="selectExitButton" layoutX="423.0" layoutY="224.0" mnemonicParsing="false" onAction="#onSelectExitButton" prefHeight="26.0" prefWidth="162.0" text="Exit" />
+      <Label layoutX="116.0" layoutY="51.0" text="Please Click On Which Item You Want To View">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="376.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateAppointmentRecordsController">
+    <children>
+        <Label layoutX="252.0" layoutY="34.0" text="Updated Customer Appointments">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="139.0" layoutY="115.0" text="Appointment ID" />
+        <TextField fx:id="updateAppointmentsIDField" editable="false" layoutX="235.0" layoutY="111.0" />
+        <ComboBox fx:id="updateAppointmentsStartTimeComboBox" layoutX="603.0" layoutY="207.0" onAction="#onUpdateAppointmentsStartTimeComboBox" prefHeight="26.0" prefWidth="185.0" />
+        <DatePicker fx:id="updateAppointmentsStartDatePickerButton" layoutX="603.0" layoutY="111.0" onAction="#onUpdateAppointmentsStartDatePicker" />
+        <Button fx:id="updateAppointmentsBackButton" layoutX="614.0" layoutY="344.0" mnemonicParsing="false" onAction="#onUpdateAppointmentsBackButton" prefHeight="26.0" prefWidth="163.0" text="Back" />
+        <TextField fx:id="updateAppointmentsTitleField" layoutX="235.0" layoutY="143.0" />
+        <TextField fx:id="updateAppointmentsDescriptionField" layoutX="235.0" layoutY="175.0" />
+        <TextField fx:id="updateAppointmentsLocationField" layoutX="235.0" layoutY="207.0" />
+        <TextField fx:id="updateAppointmentsTypeField" layoutX="235.0" layoutY="269.0" />
+        <Label layoutX="127.0" layoutY="147.0" text="Appointment Title" />
+        <Label layoutX="89.0" layoutY="179.0" text="Appointment Description" />
+        <Label layoutX="104.0" layoutY="211.0" text="Appointment Location" />
+        <Label layoutX="106.0" layoutY="242.0" text="Appointment Contact" />
+        <Label layoutX="126.0" layoutY="273.0" text="Appointment Type" />
+        <Label layoutX="460.0" layoutY="115.0" text="Appointment Start Date" />
+        <Label layoutX="467.0" layoutY="147.0" text="Appointment End Date" />
+        <DatePicker fx:id="updateAppointmentsEndDatePickerButtton" layoutX="603.0" layoutY="143.0" onAction="#onUpdateAppointmentsEndDatePicker" />
+        <ComboBox fx:id="appointmentsEndTimeComboBox" layoutX="603.0" layoutY="238.0" onAction="#onUpdateAppointmentsEndTimeComboBox" prefHeight="26.0" prefWidth="185.0" />
+        <Label layoutX="528.0" layoutY="212.0" text="Start Time" />
+        <Label layoutX="530.0" layoutY="242.0" text="End Time" />
+        <TextField fx:id="updateAppointmentsCustomerIDField" layoutX="235.0" layoutY="305.0" />
+        <TextField fx:id="updateAppointmentsUserIDField" layoutX="235.0" layoutY="337.0" />
+        <Button fx:id="updateAppointmentsSaveButton" layoutX="614.0" layoutY="310.0" mnemonicParsing="false" onAction="#onUpdateAppointmentsSaveButton" prefHeight="26.0" prefWidth="163.0" text="Save" />
+      <Label layoutX="156.0" layoutY="309.0" text="Customer ID" />
+      <Label layoutX="182.0" layoutY="341.0" text="User ID" />
+      <ComboBox fx:id="updateAppointmentsContactComboBox" layoutX="235.0" layoutY="238.0" onAction="#onUpdateAppointmentsContactComboBox" prefHeight="26.0" prefWidth="185.0" />
+    </children>
+</AnchorPane>
